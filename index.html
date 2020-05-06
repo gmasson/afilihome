@@ -9,6 +9,7 @@
 	<meta name="Robots" content="all">
 	<meta name="Rating" content="general">
 	<meta name="theme-color" content="#333333">
+	<base target="_blank">
 
 	<!-- Insira aqui as informações do produto promovido -->
 	<title>NOME DO PRODUTO</title>
@@ -28,6 +29,14 @@
 		}
 	</style>
 
+	<script type="text/javascript">
+		function linksblank(iframe){
+			var as = iframe.getElementsByTagName('a');
+			for(i = 0; i < as.length; i++){
+				as[i].setAttribute('target','_blank');
+			}
+		}
+	</script>
 
 	<!-- Aqui você coloque os códigos que precisar, como do Google Analytics -->
 	
@@ -41,7 +50,7 @@
 
 		Observação: Sempre teste a URL (abrindo o arquivo) antes de enviar para seu servidor, algumas URLs não funcionam dentro do Iframe.
 	-->
-	<iframe src="https://go.hotmart.com/Y25483437L"></iframe>
+	<iframe src="https://go.hotmart.com/Y25483437L" onload="linksblank(this)"></iframe>
 
 	<!--
 		Aqui você vai colocar a descrição completa do produto promovido, para SEO
